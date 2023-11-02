@@ -2,7 +2,7 @@
 
 import { Store } from '@/store/Store';
 import { useRouter } from 'next/navigation';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 
 export default function Home() {
   const router = useRouter();
@@ -27,6 +27,7 @@ export default function Home() {
     if (name&& name.length > 2 && name !== "" && name !== 'undefined') router.push('/ChooseProfessionPage')
     else window.alert('Choose your Name!')
   }
+
 
   return (
     <main className="flex min-h-screen flex-col gap-10 w-1/2 items-center mx-auto">

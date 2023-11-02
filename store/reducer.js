@@ -9,6 +9,9 @@ export const reducer = (state, action) => {
         case 'SAVE_PROFESSION':
             return { ...state, story: { ...state.story, profession: action.payload } };
         
+        case 'SAVE_PLACE':
+            return { ...state, story: { ...state.story, place: action.payload } };
+        
 
 
 
